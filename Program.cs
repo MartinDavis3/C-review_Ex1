@@ -29,6 +29,10 @@ namespace creview
             foreach ( int num in myArray ) {
                 Console.WriteLine( "Current Foreach Value is: {0}" , num);
             }
+
+            Console.WriteLine( "Please enter your name: ");
+            string myName = Console.ReadLine();
+            Console.WriteLine( "Thank you, {0}!", myName);
         }
         
         static void MyMethod()
