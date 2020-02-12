@@ -6,7 +6,29 @@ namespace creview
     {
         static void Main(string[] args)
         {
-            MyMethod();
+            //MyMethod();
+            
+            int[] myArray = new int[5] {3, 4, 5, 6, 7};
+            myArray[0] = 2;     //update value by index
+            //Console.WriteLine( myArray[0] );
+
+            for ( int i = 0; i < 5; i++) {
+                Console.WriteLine( "Array Index:{0} | Array Value:{1}" , i, myArray[i] );
+            }
+
+            Console.WriteLine();
+
+            int n = 0;
+            while ( n < 5) {
+                Console.WriteLine( "Array Index:{0} | Array Value:{1}" , n, myArray[n] );
+                n += 2;
+            }
+
+            Console.WriteLine();
+
+            foreach ( int num in myArray ) {
+                Console.WriteLine( "Current Foreach Value is: {0}" , num);
+            }
         }
         
         static void MyMethod()
