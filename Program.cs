@@ -17,7 +17,7 @@ namespace creview
             } else {
                 Console.WriteLine("x is greater than Thirty!");
             }
-            int a=3;
+            int a=2;
             switch ( a ) {
                 case 1:
                     Console.WriteLine( "Value is 1!" );
@@ -29,6 +29,7 @@ namespace creview
                     Console.WriteLine( "Value is 3!" );
                     break;
                 default:
+                    Console.WriteLine( "uh oh, it is another value!");
                     break;
             }
         }
